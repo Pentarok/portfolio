@@ -20,23 +20,19 @@ const ProjectDetails = () => {
           <p>{project.summary}</p>
           {/* Render other details */}
           <p>{project.content}</p>
-          {project.
-view_project_url !==null?
-<div>
-<a href={`${project.view_project_url}`}>View project here</a>
+          
+{project.view_project_url && project.view_project_url !== "" ? (
+  <div>
+    <a href={`${project.view_project_url}`}>View project here</a>
+  </div>
+) : null}
 
-</div>
-:null}
 
-{project.
-git_repo_url
-!==null?
-<div>
-<a href={`${project.git_repo_url
-}`}>View git repo</a>
-</div>
-
-:null}
+{project.git_repo_url && project.git_repo_url !== "" ? (
+  <div>
+    <a href={`${project.git_repo_url}`}>View git repo</a>
+  </div>
+) : null}
 
 {/* replace with project.photo */}
 {project.view_project_url
