@@ -23,14 +23,14 @@ const ProjectDetails = () => {
           
 {project.view_project_url && project.view_project_url !== "" ? (
   <div>
-    <a href={`${project.view_project_url}`}>View project here</a>
+    <a href={`${project.view_project_url}`} target="a_blank">View project here</a>
   </div>
 ) : null}
 
 
 {project.git_repo_url && project.git_repo_url !== "" ? (
   <div>
-    <a href={`${project.git_repo_url}`}>View git repo</a>
+    <a href={`${project.git_repo_url}`}  target="a_blank">View git repo</a>
   </div>
 ) : null}
 
