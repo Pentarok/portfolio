@@ -1,21 +1,4 @@
-import Accordian from './Accordian';
-import Try from './Try.jsx'
-import Color from './Color.jsx';
-/* import Star from './Star.jsx';
-import More from './more.jsx';
-import './App.css';
-import Slider from './Slider.jsx';
-import Nav from './Nav.jsx';
-
-import TreeView from "./components/tree-view";
-import menus from "./components/tree-view/data";
-/* import Qrcode from './Qrcode.jsx'; 
-import Theme from './Theme.jsx';
-import Tabtest from './Tab-test.jsx';
-import Scroll from './Scroll.jsx';
-import Cod from './cod.jsx';
-import Pop from './pop.jsx';
-import Acodian from './Acodian.jsx'; */
+import React from 'react';
 import Portfolio from './Portfolio.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ProjectDetails from './ProjectDetails.jsx';
