@@ -1,0 +1,35 @@
+.intro-wrapper{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(162, 162, 162);
+    border-radius: 5px;
+    padding: 15px;
+   margin: 5px;
+   flex-wrap: wrap;
+   margin-bottom: 20px;
+}
+.intro-text{
+    color: white;
+    flex-basis: 50%;
+}
+.intro-text h1{
+    color: aqua;
+}
+
+.intro-image img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid aqua;
+box-shadow: 5px 2px 30px 5px aqua;
+}
+.image-box{
+    max-width: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

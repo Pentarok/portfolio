@@ -1,0 +1,332 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(8, 8, 8, 0.87);
+  background-color: #fffbfb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body{
+  background-image:linear-gradient(95deg,black,rgb(11, 11, 124));
+  min-height: 100vh;
+
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.list-container{
+  text-align: center;
+
+}
+.btn-multiselect{
+  padding: 5px;
+  background-color: hsl(237, 69%, 35%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.btn-multiselect:hover{
+  background-color: hsl(237, 69%, 55%);
+}
+.add-btn{
+  background-color: hsl(120, 100%, 53%);
+}
+.add-btn:hover{
+  background-color: hsl(120, 100%, 33%);
+}
+.delete-btn{
+  background-color: hsl(11, 100%, 42%);
+}
+.delete-btn:hover{
+  background-color: hsl(11, 100%, 28%);
+}
+.move{
+  background-color: hsl(240, 86%, 45%);
+}
+.move:hover{
+  background-color: hsl(240, 86%, 35%);
+}
+input[type="text"]{
+  font-size: 17px;
+  border: 2px solid hsl(0, 8%, 25%);
+  border-radius: 5px;
+  color: black;
+}
+/*li{
+ font-size: 17px;
+ font-weight: bold; 
+ padding: 10px;
+ margin-bottom: 10px;
+ background-color: white;
+ border: 3px solid hsl(0, 0%, 80%);
+ border-radius: 5px;
+ display: flex;
+ align-items: center;
+}*/
+.text{
+  flex: 1;
+}
+.delete-btn, .move{
+padding: 8px 12px;
+font-size: 17px;
+margin-left: 10px;
+}
+/* .container{
+  background-color: rgb(128, 0, 128);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.content{
+  margin-bottom: 20px;
+
+}
+.wrapper{
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ background-color: purple;
+ padding: 20px;
+  color: white;
+  width: 450px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+span{
+  font-size: 20px;
+  font-weight: bold;
+}
+span:hover{
+
+  cursor: pointer;
+}
+.toggle{
+  background-color:#535bf2 ;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.star{
+  cursor: pointer;
+}
+.active{
+  color: orange;
+}
+.img-wrapper{
+  position: relative;
+  width: 398px;
+  height: 200px;
+  display: flex;
+ margin-bottom: 50px;
+
+ 
+}
+.img-wrapper img{
+  width: 395px;
+  height:196px;
+
+
+}
+.hide{
+  display: none;
+}
+.arrow{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.left{
+
+left: -2rem;
+}
+.right{
+  right: -2rem;
+}
+.current-image{
+
+  object-fit: cover;
+
+  border-radius: 5px;
+  display: block;
+  border: 2px solid rgb(187, 248, 5);
+  transition: transform 0.5s ease-in-out;
+}
+.indicator{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+  margin-right: 5px;
+ 
+  left: 10px;
+}
+
+.rap{
+
+  position: absolute;
+  top: 110%;
+  width: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indicator-active{
+  background-color: rgb(3, 247, 3);
+}
+.indicator-inactive{
+  background-color: black;
+}
+.product-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 33%;
+  
+ 
+}
+.product{
+  border: 2px solid black;
+  width: 155px;
+  height: 155px;
+  padding: 15px;
+}
+.product img{
+  border: 2 px solid black;
+  width: 150px;
+  height: 150px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+  margin: 0;
+}
+
+nav {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav li {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+nav li > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scrollbar-container{
+width: 100%;
+
+height: 25px;
+background-color: black;
+position: fixed;
+margin-bottom: 25px;
+
+}
+.scrollbar-progress{
+  background-color: rgb(8, 238, 20);
+  height: 5px;
+  position: relative;
+  top: 5px;
+}
+.pop-up-container{
+  width: 500px;
+  border: 1px solid rgb(55, 17, 92);
+  background-color: rgb(198, 219, 7);
+  position: relative;
+  color: white;
+  text-align: center;
+  animation: animate 0.7s ease-in-out;
+}
+@keyframes animate{
+  from{
+    top:-200px;
+    opacity: 0.7;
+  }
+  to{
+    top: 0px;
+    opacity: 1;
+  }
+  
+}
+.close{
+  position: absolute;
+  right: 2px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  top: -10px;
+}
+.pop-header{
+  height: 30px;
+  color: white;
+  background-color: rgb(198, 219, 7);
+  
+}
+.pop-up-body{
+  height: 100px;
+  background-color: purple;
+}
+.pop-up-footer{
+  background-color: green;
+  height: 80px;
+}

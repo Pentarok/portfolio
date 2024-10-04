@@ -1,0 +1,23 @@
+.badge-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 8px;
+   padding-bottom: 40px;
+}
+.badge-container a{
+    text-decoration: underline;
+    color: white;
+}
+.badge-container a:hover{
+    color: rgb(255, 0, 255);
+}
+.badge-container img{
+    width: 200px;
+    max-width: 210px;
+    aspect-ratio: 1/1;
+}
+.badge-wrapper{
+    margin-top: 5px;
+
+}
