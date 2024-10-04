@@ -21,7 +21,7 @@ const ProjectDetails = () => {
           {/* Render other details */}
           <p>{project.content}</p>
           {project.
-view_project_url?
+view_project_url !==null?
 <div>
 <a href={`${project.view_project_url}`}>View project here</a>
 
@@ -30,7 +30,7 @@ view_project_url?
 
 {project.
 git_repo_url
-?
+!==null?
 <div>
 <a href={`${project.git_repo_url
 }`}>View git repo</a>
