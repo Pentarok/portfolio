@@ -23,7 +23,7 @@ const hideMessage = ()=>{
         try {
             setLoading(true)
         e.preventDefault();
-        const res = await axios.post('http://localhost:3000/message',{email, name, message},{withCredentials:true});
+        const res = await axios.post('https://portfolio-api-eta-two.vercel.app/message',{email, name, message},{withCredentials:true});
         console.log(res);
         if(res.data=='Ok'){
             setLoading(false)
