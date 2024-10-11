@@ -39,7 +39,7 @@ const ProjectDetails = () => {
 ?
 
 <div className="project-image">
-  <img src={project.image}></img>
+  <img src={require(`${project.image}`)}></img>
 </div>
 :
 null
