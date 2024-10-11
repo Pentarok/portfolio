@@ -39,7 +39,7 @@ const ProjectDetails = () => {
 ?
 
 <div className="project-image">
-  <img src={profile5}></img>
+  <img src={project.image}></img>
 </div>
 :
 null
