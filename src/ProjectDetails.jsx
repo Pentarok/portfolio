@@ -1,7 +1,10 @@
 import { useParams, useLocation } from 'react-router-dom';
 import './projectDetails.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import profile5 from './assets/profile5.jpeg'
+import profile8 from './assets/profile8.png'; // Import images directly from src
+import profile5 from './assets/profile5.jpeg';
+
+import profile7 from './assets/profile7.jpeg';
 const ProjectDetails = () => {
   const { id } = useParams();  // Still get the id for reference
   const location = useLocation();
@@ -39,7 +42,10 @@ const ProjectDetails = () => {
 ?
 
 <div className="project-image">
-  <img src={require(`${project.image}`)}></img>
+<img 
+                  src={project.image === './assets/profile8.png' ? profile8 : profile7} 
+                  alt="Project" 
+                />
 </div>
 :
 null
