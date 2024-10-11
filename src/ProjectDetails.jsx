@@ -1,7 +1,7 @@
 import { useParams, useLocation } from 'react-router-dom';
 import './projectDetails.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import profile5 from './assets/profile5.jpg'
+import profile5 from './assets/profile5.jpeg'
 const ProjectDetails = () => {
   const { id } = useParams();  // Still get the id for reference
   const location = useLocation();
