@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import profile8 from './assets/profile8.png'; // Import images directly from src
 import profile5 from './assets/profile5.jpeg';
 
-import profile7 from './assets/profile7.jpeg';
+import profile7 from './assets/profile7.png';
 const ProjectDetails = () => {
   const { id } = useParams();  // Still get the id for reference
   const location = useLocation();
