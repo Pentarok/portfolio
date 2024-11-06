@@ -25,6 +25,7 @@ const hideMessage = ()=>{
         e.preventDefault();
         const res = await axios.post('https://portfolio-api-fpa8.vercel.app/message',{email, name, message},{withCredentials:true});
         console.log(res);
+
         if(res.data=='Ok'){
             setLoading(false)
             setAlertMessage('Message sent successfully');
