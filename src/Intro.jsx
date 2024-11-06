@@ -1,7 +1,10 @@
+
 import React, { useEffect, useState } from 'react';
 import  {ReactTyped}  from 'react-typed';  // Named import
 import profile5 from './assets/profile5.jpg';
 import './Intro.css';
+
+
 
 const Intro = () => {
   return (
@@ -34,4 +37,6 @@ const Intro = () => {
   );
 };
 
+
 export default Intro;
+
