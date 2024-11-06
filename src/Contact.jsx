@@ -74,9 +74,7 @@ const hideMessage = ()=>{
   </div>
 <div className='btn-wrapper'>
     <div>
-    <button type="submit" disabled={loading} className="btn"  style={{width:'170px',}}>{loading?'loading':'Send'}</button>
-    </div>
-
+      <button type="submit" disabled={loading} className={loading?"btn text-white fw-bold btn-dark":'btn '}  style={{width:'170px',}}>{loading?'loading...':'Send'}</button>
 </div>
 {alertMessage.length>1 &&(
  <div className={alertMessage.includes('error')?'alert error text-center':'alert success text-center '}>{alertMessage}</div>
