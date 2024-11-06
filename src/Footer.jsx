@@ -5,7 +5,7 @@ import { faXTwitter } from '@fortawesome/free-brands-svg-icons'; // FontAwesome 
 import './footer.css';
 const Footer = () => {
   return (
-    <div style={{ textAlign: 'center', padding: '20px', backgroundColor: 'hsl(294, 98%, 30%)', color: '#fff',}}>
+    <div style={{ textAlign: 'center', padding: '20px', backgroundColor: 'blue', color: '#fff',}}>
       <h3>Find me on:</h3>
       <div className='d-flex justify-content-center align-items-center gap-2'>
         <div className="icon">
@@ -14,11 +14,11 @@ const Footer = () => {
         </a>
         </div>
 
-        <div className="icon">
+      {/*   <div className="icon">
         <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0 10px' }}>
           <FontAwesomeIcon icon={faXTwitter} />
         </a>
-        </div>
+        </div> */}
        
         <div className='icon'>
         <a href="https://wa.me/+254742171443" target="_blank" rel="noopener noreferrer" style={{ color: 'white', margin: '0 10px' }}>
@@ -27,6 +27,11 @@ const Footer = () => {
         </div>
         
       </div>
+
+      <p>
+        &copy; {new Date().getFullYear()} Emmanuel Makori. All Rights Reserved.
+      </p>
+   
     </div>
   );
 }

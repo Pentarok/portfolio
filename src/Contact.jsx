@@ -73,7 +73,7 @@ const hideMessage = ()=>{
   </div>
 <div className='btn-wrapper'>
     <div>
-    <button type="submit" disabled={loading} class="btn"  style={{width:'170px',backgroundColor:'aqua'}}>{loading?'loading':'Send'}</button>
+    <button type="submit" disabled={loading} className="btn"  style={{width:'170px',}}>{loading?'loading':'Send'}</button>
     </div>
 
 </div>

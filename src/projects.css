@@ -100,7 +100,7 @@
     height: 350px;
     width: 360px;
     border: 2px solid white;
-    background-color: purple;
+    background-color: blue;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ position: relative;
   }
   .overlay {
     position: absolute;
-    background-color: aqua;
+    background-color: rgb(240, 240, 240);
  
     top: 0;
     right: 0;
@@ -127,21 +127,21 @@ position: relative;
   position: absolute;
   width: 40px;
   height: 40px;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
 
   bottom: -40px;
   right: 0px;
  }
  .overlay::after{
     border-radius: 0px 20px 0px 0px;
-    background-color: hsl(294, 98%, 30%);
+    background-color:blue;
  }
  .text-box{
     position: relative;
     padding: 5px;
  }
  .redirect-wrapper{
-    background-color:  hsl(294, 98%, 30%);
+    background-color:  blue;
     height: 100%;
     align-items: center;
     justify-content: center;

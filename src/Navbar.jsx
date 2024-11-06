@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
 
   return (
     <>
-      <AppBar position="static" sx={{ backgroundColor: 'hsl(294, 98%, 30%)' }}>
+      <AppBar position="static" sx={{ backgroundColor: 'blue' }}>
         <Toolbar disableGutters>
           {/* Hamburger menu for small screens */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
